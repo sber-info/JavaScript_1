@@ -1,0 +1,79 @@
+<script>
+    var car ={
+        name:"Audi",
+        year:2019,
+        color:"white",
+        engineStarted:false,
+        f:function(x,y){
+            return x + y;
+        }
+    }
+    
+    alert(car.f(1,2));
+          
+    var car2 ={
+        name:"BMW",
+        year:2018,
+        color:"black",
+        engineStarted:false
+    }
+    car.v = 1.8;
+    
+    //console.log(car);
+    
+    
+    //Функции в ООП называются методами
+    //Если у startEngine оставить скобки
+    //то ф-я не присваивается свойству объекта, а вызывается
+    car.start = startEngine;//создали метод start
+    car2.start = startEngine;
+    //запускаем метод через скобки
+    car.start();
+   // console.log(car);
+    
+    function startEngine(){
+        //console.log(this);
+        if(!this.engineStarted){
+            this.engineStarted = true;
+        }
+    }
+    
+    car.stop = function(){
+        if(this.engineStarted)
+            this.engineStarted = false;
+    }
+    
+    car2.stop = function(){
+        if(this.engineStarted)
+            this.engineStarted = false;
+    }
+    car.stop();
+    car2.stop();
+    
+    var car3 = car;
+    car = null;
+    //console.log(car3);
+    
+    //delete car3.year;
+    
+    for(var i in car3){
+        console.log(i+":"+car3[i]);
+    }
+    
+    var questions = [
+        {q:'...',a1:''...,a4:'',correct:1},
+    ]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
