@@ -97,4 +97,4 @@ function paintCell() {
 
 }
 
-paintCell();
+window.onload=paintCell;
