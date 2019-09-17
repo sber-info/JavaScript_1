@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="basket">
+            <img src="img\basket.jpg">
+
+            <p>товары в корзине:</p>
+            
+            <ol id="spis">
+               
+            </ol>
+        </div>
+
+        <div class="small">
+            <div id="red">
+                <h2> RED </h2>
+                <p> 10000 </p>
+                <img src="img\small\red.jpg" alt="red">
+                <button onclick="f(this.parentElement.id)">купить</button>
+            </div>
+            <div id="blue">
+                <h2> Blue </h2>
+                <p> 500 </p>
+                <img src="img\small\blue.jpg" alt="blue" onclick="f(this.id)">
+                <button onclick="f(this.parentElement.id)">купить</button>
+            </div>
+            <div id="yellow">
+                <h2>Yellow</h2>
+                <p> 20000 </p>
+                <img src="img\small\yellow.jpg" alt="yellow" onclick="f(this.id)">
+                <button onclick="f(this.parentElement.id)">купить</button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

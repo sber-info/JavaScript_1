@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'phenomena-regular';
+  src: url('./../fonts/phenomena/Phenomena-Regular.otf');
+}
+
+@font-face {
+  font-family: 'phenomena-bold';
+  src: url('./../fonts/phenomena/Phenomena-Bold.otf');
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.basket_content {
+	font-family: 'phenomena-bold';	
+	font-size: 18px;
+	float: right;
+	margin: 10px 50px 0px 10px
+}
+
+.basket_table {
+	border: 1px solid black;
+}
+
+.basket_table tr td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.total {
+	color: brown;
+	font-size: 24px;
+}
+
+.item_list {
+	float: left;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 800px;
+}
+
+.item {
+	width: 182px;
+	height: 182px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid black;
+}
+
+.prod_image {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	width: 180px;
+	height: 180px;
+}
+
+.basket_icon_border {
+	position: absolute;
+	border: solid 1px white;
+	background: #F2D0A4;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 54px;
+	height: 54px;
+	opacity: 0;
+}
+
+.basket_icon {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 40px;
+	height: 34px;
+	opacity: 0;
+}
+
+.text {
+	position: absolute;
+	width: 180px;
+	height: 80px;
+	left: 0;
+	top: 120px;
+	background: white;
+	opacity: 0.75;
+	padding: 4px;
+	text-align: center;
+}
+
+.title {
+	font-family: 'phenomena-bold';	
+	font-size: 18px;
+}
+
+.price {
+	font-family: 'phenomena-bold';	
+	font-size: 24px;
+	color: brown;
+	margin-top: 4px;
+}
+
+
+.item:hover .basket_icon_border {
+	position: absolute;
+	border: solid 1px white;
+	background: #F2D0A4;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 54px;
+	height: 54px;
+	z-index: 1;
+	opacity: 1;
+	box-shadow: 0px 5px 5px 0px rgba(64,64,64,64.75);
+	cursor: pointer;
+}
+
+.item:hover .basket_icon {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 40px;
+	height: 34px;
+	opacity: 1;
+}
+
+
